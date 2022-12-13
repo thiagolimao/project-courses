@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+# Components Select2
+--------------------------------------------------------------*/
+
+.select2-filter-course {
+    width: 230px;
+    +.select2 {
+        .select2-selection {
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid $line-light;
+            .select2-selection__rendered {
+                line-height: 50px;
+                padding-left: 1rem;
+                color: $input-placeholder;
+                // padding-right: 20px;
+                .select2-selection__placeholder {
+                    color: $secondary;
+                    font-weight: $fw-bold;
+                }
+            }
+            .select2-selection__arrow {
+                width: 3rem;
+                height: 3rem;
+                b {
+                    width: 19px;
+                    height: 19px;
+                    margin-left: -6px;
+                    margin-top: -9px;
+                    border: none;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-color: transparent;
+                    background-position: center;
+                    background-image: url("../img/icon/icon-filter-order.svg");
+                }
+            }
+        }
+        &:hover {
+            .select2-selection {
+                background-color: $dark-primary;
+                .select2-selection__rendered {
+                    color: $white;
+                }
+                .select2-selection__arrow {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        &.select2-container--open {
+            // .select2-selection--single,
+            // .select2-selection--multiple {
+            //     border-bottom-left-radius: 10px;
+            //     border-bottom-right-radius: 10px;
+            // }
+            .select2-selection {
+                // background-color: $dark-primary;
+                .select2-selection__rendered {
+                    // color: $white;
+                }
+                .select2-selection__arrow {
+                    // filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}
+
+.select2-container--open {
+    .select2-dropdown {
+        background-color: white;
+        border-color: $line-light !important;
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+        // border: none;
+        border-radius: 0 0 10px 10px;
+        .select2-results__options {
+            padding-top: .5rem;
+            .select2-results__option {
+                padding: .5rem 1rem;
+                color: $dark-primary;
+                font-weight: $fw-medium;
+                display: flex;
+                align-items: center;
+                &:before {
+                    content: "";
+                    background-image: url('/assets/img/icon/ico-arrow-left-green.svg');
+                    background-repeat: no-repeat;
+                    margin-right: .5rem;
+                    display: none;
+                    width: 5px;
+                    height: 10px;
+                }
+                &.select2-results__option--highlighted[aria-selected] {
+                    background-color: $bg-light;
+                    color: $dark-primary;
+                    &:before {
+                        display: initiaflexl;
+                    }
+                }
+            }
+        }
+    }
+}

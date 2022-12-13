@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Pagina de cursos
+--------------------------------------------------------------*/
+
+.sec-cursos {
+    padding-bottom: $pad-space;
+    background-color: #f9f9f9;
+    padding-top: 3rem;
+    @media (max-width: 991.98px) {
+        .container {
+            max-width: 100% !important;
+        }
+    }
+    .list-courses {
+        .header-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .filter-header {
+                div[class*="filter"] {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}

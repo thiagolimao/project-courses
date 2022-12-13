@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Components Filter
+--------------------------------------------------------------*/
+.filter {
+    .form-control {
+        border-radius: 0.675rem;
+        margin-bottom: 0.8rem;
+        border-color: $secondary;
+        padding: 0.625rem 1.125rem;
+        height: calc(1.5em + 1.25rem + 2px);
+        font-weight: $fw-light;
+        font-size: 0.975rem;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .label-range {
+        font-size: 1rem;
+        font-weight: $fw-bold;
+        color: $dark-gray;
+    }
+
+    .custom-control {
+        &:not(:last-child) {
+            margin-bottom: 0.6rem;
+        }
+    }
+}

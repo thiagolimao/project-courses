@@ -1,0 +1,13 @@
+{% extends "template.html" %} {% set page ='home' %} {% block meta %}
+<title>lorem_title</title>
+{% endblock %} {% block content %} {% include "parts/components/breadcrumb.html" %}
+<section class="sec-cursos">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            {% include "parts/cursos/sidebar.html" %} {% include "parts/cursos/main.html" %}
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</section>
+{% endblock %}

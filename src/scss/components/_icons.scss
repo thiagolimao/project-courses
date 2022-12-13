@@ -1,0 +1,196 @@
+/*--------------------------------------------------------------
+# Components Icons
+--------------------------------------------------------------*/
+.ico {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    display: inline-block;
+
+    &.ico-filter {
+        width: 20px;
+        height: 16px;
+
+        background-image: url("../img/icon/ico-filtro.svg");
+    }
+
+    &.arrow-back {
+        width: 16px;
+        height: 12px;
+
+        background-image: url("../img/icon/arrow-back.svg");
+    }
+
+    &.arrow-down {
+        width: 20px;
+        height: 20px;
+
+        background-image: url("../img/icon/icons_arrowdown.svg");
+    }
+
+    &.social-facebook {
+        width: 21px;
+        height: 21px;
+
+        background-image: url("../img/icon/social-facebook.svg");
+    }
+
+    &.social-twitter {
+        width: 21px;
+        height: 21px;
+
+        background-image: url("../img/icon/social-twitter.svg");
+    }
+
+    &.social-youtube {
+        width: 21px;
+        height: 21px;
+
+        background-image: url("../img/icon/social-youtube.svg");
+    }
+
+    &.social-instagram {
+        width: 21px;
+        height: 21px;
+
+        background-image: url("../img/icon/social-instagram.svg");
+    }
+
+    &.social-linkedin {
+        width: 21px;
+        height: 21px;
+
+        background-image: url("../img/icon/social-linkedin.svg");
+    }
+
+    &.ico-acervo {
+        background-image: url("../img/icon/icon_numbers_acervo.svg");
+    }
+
+    &.ico-cursos {
+        background-image: url("../img/icon/icon_numbers_cursos.svg");
+    }
+
+    &.ico-professores {
+        background-image: url("../img/icon/icon_numbers_professores.svg");
+    }
+
+    &.ico-unidades {
+        background-image: url("../img/icon/icon_numbers_unidades.svg");
+    }
+
+    &.ico-produtos-unidades {
+        background-image: url("../img/icon/icon_produtos_unidades.svg");
+    }
+
+    &.ico-produtos-degustacao {
+        background-image: url("../img/icon/icon_produtos_degustacao.svg");
+    }
+
+    &.ico-produtos-assinatura {
+        background-image: url("../img/icon/icon_produtos_assinatura.svg");
+    }
+
+    &.ico-internacionalidade {
+        background-image: url("../img/icon/icon_pilares_internacionalidade.svg");
+    }
+
+    &.ico-inovacao {
+        background-image: url("../img/icon/icon_pilares_inovacao.svg");
+    }
+
+    &.ico-qualidade {
+        background-image: url("../img/icon/icon_pilares_qualidade.svg");
+    }
+
+    &.ico-tradicao {
+        background-image: url("../img/icon/icon_pilares_tradicao.svg");
+    }
+
+    &.ico-category {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $bg-light;
+        background-size: 16px;
+
+        &.comunicacao {
+            background-image: url("../img/icon/ico-comunicacao.svg");
+        }
+
+        &.design {
+            background-image: url("../img/icon/ico-design.svg");
+        }
+
+        &.direito {
+            background-image: url("../img/icon/ico-direito.svg");
+        }
+
+        &.educacao {
+            background-image: url("../img/icon/ico-educacao.svg");
+        }
+
+        &.engenharia {
+            background-image: url("../img/icon/ico-engenharia.svg");
+        }
+
+        &.negocios {
+            background-image: url("../img/icon/ico-negocios.svg");
+        }
+
+        &.saude {
+            background-image: url("../img/icon/ico-saude.svg");
+        }
+
+        &.tecnologia {
+            background-image: url("../img/icon/ico-tecnologia.svg");
+        }
+
+        &.turismo {
+            background-image: url("../img/icon/ico-turismo.svg");
+        }
+    }
+
+    &.arrow-right {
+        width: 24px;
+        height: 24px;
+
+        background-image: url("../img/icon/arrow-forward.svg");
+    }
+
+    &.arrow-download {
+        width: 20px;
+        height: 20px;
+
+        background-image: url("../img/icon/arrow-download.svg");
+    }
+
+    &.curso-modalidade {
+        width: 32px;
+        height: 32px;
+
+        background-image: url("../img/icon/curso-modalidade.svg");
+    }
+
+    &.curso-duracao {
+        width: 32px;
+        height: 32px;
+
+        background-image: url("../img/icon/curso-duracao.svg");
+    }
+
+    &.curso-mensalidade {
+        width: 32px;
+        height: 32px;
+
+        background-image: url("../img/icon/curso-mensalidade.svg");
+    }
+
+    &.curso-titulacao {
+        width: 32px;
+        height: 32px;
+
+        background-image: url("../img/icon/curso-titulacao.svg");
+    }
+}

@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Header cursos
+--------------------------------------------------------------*/
+.pag-cursos {
+    .section-title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .title-default {
+            strong {
+                @media (min-width: 992px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}

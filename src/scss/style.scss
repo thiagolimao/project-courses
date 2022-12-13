@@ -1,0 +1,21 @@
+// Base.
+@import "base/variables";
+@import "base/reset";
+@import "base/page";
+@import "base/typography";
+// Component.
+// @import "components/button";
+@import "components/breadcrumb";
+@import "components/card";
+// @import "components/filter";
+@import "components/form";
+// @import "components/icons";
+// @import "components/image";
+@import "components/tabs";
+// @import "components/preloader";
+@import "components/select2";
+// Layout.
+@import "layout/cursos/page";
+// @import "layout/cursos/header";
+@import "layout/cursos/cursos";
+@import "layout/cursos/sidebar";

@@ -1,0 +1,366 @@
+<!-- ======= Main ======= -->
+<main id="main" class="list-courses col-12 col-md-12 col-lg-9">
+
+    <header class="header-list">
+        <h1 class="title-default title-course">Cursos livres</h1>
+
+        <div class="filter-header">
+            <div class="filter-desktop d-none d-lg-flex">
+                <ul class="nav nav-tabs tabs-courses" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="list-tab" data-toggle="tab" data-target="#list" type="button" role="tab" aria-controls="list" aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+                                <g id="Grupo_1488" data-name="Grupo 1488" transform="translate(-1288 -326)">
+                                    <rect class="svg-color" id="Retângulo_601" data-name="Retângulo 601" width="5"
+                                        height="5" transform="translate(1288 326)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_604" data-name="Retângulo 604" width="16"
+                                        height="5" transform="translate(1295 326)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_602" data-name="Retângulo 602" width="5"
+                                        height="5" transform="translate(1288 333)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_605" data-name="Retângulo 605" width="16"
+                                        height="5" transform="translate(1295 333)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_603" data-name="Retângulo 603" width="5"
+                                        height="5" transform="translate(1288 340)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_606" data-name="Retângulo 606" width="16"
+                                        height="5" transform="translate(1295 340)" fill="#819196" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="cards-tab" data-toggle="tab" data-target="#cards" type="button" role="tab" aria-controls="cards" aria-selected="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="Grupo_1489" data-name="Grupo 1489" transform="translate(-1318 -321)">
+                                    <rect class="svg-color" id="Retângulo_607" data-name="Retângulo 607" width="9"
+                                        height="9" transform="translate(1318 321)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_610" data-name="Retângulo 610" width="9"
+                                        height="9" transform="translate(1318 332)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_608" data-name="Retângulo 608" width="9"
+                                        height="9" transform="translate(1329 321)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_609" data-name="Retângulo 609" width="9"
+                                        height="9" transform="translate(1329 332)" fill="#819196" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+
+                <select class="select2 select2-filter-course" data-minimum-results-for-search="Infinity" name="state">
+                    <option value="" selected="selected" disabled>Ordernar por</option>
+                    <option value="A a Z">A a Z</option>
+                    <option value="Z a A">Z a A</option>
+                    <option value="Recentes">Recentes</option>
+                </select>
+            </div>
+            <!-- /filter-desktop  -->
+            <div class="filters-mobile d-flex d-lg-none">
+                <ul class="nav nav-tabs tabs-courses" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="list-tab" data-toggle="tab" data-target="#list" type="button" role="tab" aria-controls="list" aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+                                <g id="Grupo_1488" data-name="Grupo 1488" transform="translate(-1288 -326)">
+                                    <rect class="svg-color" id="Retângulo_601" data-name="Retângulo 601" width="5"
+                                        height="5" transform="translate(1288 326)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_604" data-name="Retângulo 604" width="16"
+                                        height="5" transform="translate(1295 326)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_602" data-name="Retângulo 602" width="5"
+                                        height="5" transform="translate(1288 333)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_605" data-name="Retângulo 605" width="16"
+                                        height="5" transform="translate(1295 333)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_603" data-name="Retângulo 603" width="5"
+                                        height="5" transform="translate(1288 340)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_606" data-name="Retângulo 606" width="16"
+                                        height="5" transform="translate(1295 340)" fill="#819196" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="cards-tab" data-toggle="tab" data-target="#cards" type="button" role="tab" aria-controls="cards" aria-selected="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="Grupo_1489" data-name="Grupo 1489" transform="translate(-1318 -321)">
+                                    <rect class="svg-color" id="Retângulo_607" data-name="Retângulo 607" width="9"
+                                        height="9" transform="translate(1318 321)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_610" data-name="Retângulo 610" width="9"
+                                        height="9" transform="translate(1318 332)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_608" data-name="Retângulo 608" width="9"
+                                        height="9" transform="translate(1329 321)" fill="#819196" />
+                                    <rect class="svg-color" id="Retângulo_609" data-name="Retângulo 609" width="9"
+                                        height="9" transform="translate(1329 332)" fill="#819196" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="filter-courses" type="button">
+                            <svg width="26" height="23" viewBox="0 0 18 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.93407 3.46256C3.1724 3.74405 3.59655 3.77841 3.88201 3.54714C4.16747 3.31454 4.20517 2.89692 3.96684 2.61674L2.8681 1.32159H15.746L10.6078 7.37445C10.5068 7.49339 10.4516 7.64273 10.4516 7.79736V12.1467L8.16389 13.27V7.79736C8.16389 7.64273 8.10868 7.49339 8.00769 7.37445L5.98794 4.99559C5.74692 4.71278 5.32277 4.67841 5.03866 4.91101C4.7532 5.14361 4.7155 5.56123 4.95383 5.84141L6.81604 8.03656V14.3392C6.81604 14.5678 6.93722 14.7806 7.13516 14.9009C7.24288 14.967 7.36541 15 7.48929 15C7.59162 15 7.6953 14.9762 7.79091 14.93L11.4251 13.1458C11.6527 13.0335 11.7967 12.8048 11.7967 12.5551V8.03656L17.6998 1.0837C17.8681 0.886784 17.9031 0.611894 17.7927 0.380617C17.6823 0.148018 17.4453 0 17.1841 0H1.43003C1.16881 0 0.931827 0.148018 0.820067 0.380617C0.709654 0.611894 0.746009 0.886784 0.914322 1.0837L2.93407 3.46256Z"
+                                    fill="#C4C4C4"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /filter-header -->
+    </header>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+            <div class="row list">
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /tab-pane -->
+        <div class="tab-pane fade show active" id="cards" role="tabpanel" aria-labelledby="cards-tab">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- ###### ITEM ###### -->
+                    {% include "parts/components/card-course.html" %}
+                </div>
+                <!-- /col -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /tab-pane -->
+    </div>
+    <!-- /tab-content -->
+
+
+</main>
+<!-- End #main -->

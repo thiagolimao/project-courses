@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+# Components Card
+--------------------------------------------------------------*/
+
+.card {
+    &.card-course {
+        border: none;
+        border-radius: 0.675rem;
+        background-color: $white;
+        overflow: hidden;
+        box-shadow: none;
+        padding: .5rem;
+        height: 100%;
+        border-radius: .5rem;
+        text-decoration: none;
+        .card-header {
+            padding: 0;
+            border: none;
+            position: relative;
+            min-height: 120px;
+            border-radius: .5rem;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .course-types {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: .25rem;
+                padding: .35rem;
+                .badge {
+                    border-radius: 0.25rem;
+                    background-color: $bg-light;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    font-size: .775rem;
+                    font-weight: $fw-normal;
+                    color: #819196;
+                }
+            }
+        }
+        .card-body {
+            padding: 1rem 0 0 0;
+            background-color: transparent;
+        }
+        .card-footer {
+            padding: 1rem 0 0.5rem 0;
+            background-color: transparent;
+            border: none;
+        }
+        .card-title {
+            font-weight: $fw-medium;
+            font-size: 1rem;
+            line-height: 1.2;
+            color: $primary;
+            margin-bottom: 1rem;
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                font-size: .875rem;
+            }
+            // color: $primary;
+            &:before {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 33.333%;
+                margin-bottom: .5rem;
+                background-color: $primary;
+            }
+        }
+        .card-subtitle {
+            font-size: 0.775rem;
+            color: $text-color;
+            margin-bottom: 0;
+            font-weight: $fw-light;
+        }
+        .card-text {
+            font-size: 0.875rem;
+            line-height: 1.2;
+            font-weight: $fw-light;
+            color: $text-color;
+            display: none;
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                font-size: .775rem;
+            }
+            &:not(:last-child) {
+                margin-bottom: 1.4rem;
+            }
+        }
+        .card-span {
+            font-size: 0.875rem;
+            line-height: 1.2;
+            font-weight: $fw-medium;
+            color: $primary;
+        }
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+        &:hover {
+            background-color: $primary;
+            .card-title {
+                color: $white;
+                &:before {
+                    background-color: $white;
+                }
+            }
+            .card-subtitle,
+            .card-text,
+            .card-span {
+                color: $white;
+            }
+        }
+    }
+}

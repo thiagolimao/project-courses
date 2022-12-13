@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+# Components Breadcrumb
+--------------------------------------------------------------*/
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    .breadcrumb-item {
+        font-weight: $fw-bold;
+        font-size: .875rem;
+        color: $white;
+        &:before {
+            color: $white;
+        }
+        a {
+            text-decoration: none;
+            font-weight: $fw-normal;
+            color: $white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.breadcrumb-search {
+    background-image: url('/assets/img/cursos/bg-breadcrumb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.875rem 0px;
+    .input-group {
+        height: 2.5rem;
+        // right: 5px;
+        &:focus {
+            box-shadow: none;
+        }
+        &::after,
+        input.form-control.rounded::after {
+            content: url('/assets/img/icon/ico-search.svg');
+            position: absolute;
+            display: flex;
+            height: 100%;
+            z-index: 10;
+            right: 1.5625rem;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    .form-control {
+        height: 100%;
+        position: relative;
+        // left: 0.3125rem;
+        border-radius: 3.125rem;
+        padding-right: 2.5rem;
+        border-color: $white;
+        border: none;
+        height: 44px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .input-group-prepend {
+        .btn {
+            background-color: $bg-light;
+            border-radius: 3.125rem;
+            border: solid 4px $white;
+            min-width: 130px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            color: $input-placeholder;
+            &:after {
+                content: url('/assets/img/icon/ico-arrow-down.svg');
+                border: none;
+            }
+            &:hover {
+                background-color: $dark-primary;
+                color: $white;
+                &:after {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            background-color: $white;
+            position: absolute;
+            height: 100%;
+            width: 3rem;
+            right: 100%;
+            right: -0.3125rem;
+        }
+    }
+}

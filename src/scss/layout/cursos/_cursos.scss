@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Listagem de cursos
+--------------------------------------------------------------*/
+
+.list-courses {
+    .header-list {
+        margin-bottom: 2rem;
+        .title-default {
+            font-size: 2rem;
+            line-height: 1.2rem;
+            color: $dark-primary;
+            font-weight: $fw-medium;
+        }
+    }
+    .row {
+        margin-right: -.5rem;
+        margin-left: -.5rem;
+        div[class*="col"] {
+            padding-right: .5rem;
+            padding-left: .5rem;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+    .list {
+        .card-course {
+            flex-direction: row;
+            gap: 1.4rem;
+            align-items: center;
+            @media (max-width: 520px) {
+                align-items: flex-start;
+            }
+            .card-header {
+                min-width: 178px;
+                height: 100%;
+                @media (max-width: 520px) {
+                    display: none;
+                }
+            }
+            .card-body {
+                // display: flex;
+                // flex-direction: row;
+                // gap: 1rem;
+                padding-top: 0;
+                .card-title {
+                    &:before {
+                        width: 110px;
+                    }
+                }
+                .card-subtitle {
+                    font-size: 0.775rem;
+                    color: $text-color;
+                    margin-bottom: 0;
+                    font-weight: $fw-light;
+                }
+                .card-text {
+                    margin-bottom: 0;
+                    display: block;
+                }
+                ul {
+                    li {
+                        span {
+                            font-size: 0.875rem;
+                            line-height: 1.2;
+                            font-weight: $fw-medium;
+                            color: $primary;
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .card-footer {
+                padding-right: 1rem;
+            }
+            .card-span {
+                white-space: nowrap;
+            }
+            &:hover {
+                background-color: $primary;
+                .card-body {
+                    .card-title {
+                        color: $white;
+                        &:before {
+                            background-color: $white;
+                        }
+                    }
+                    .card-subtitle,
+                    .card-text,
+                    .card-span {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
